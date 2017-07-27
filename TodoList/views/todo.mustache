@@ -15,17 +15,22 @@
     </div>
 
     <div class="tasks">
+
     <ul>
       {{ #todos }}
         <li><button type="submit" placeholder="Mark complete">Mark complete</button><p>{{.}}</p></li>
       {{ /todos }}
     </ul>
+
     </div>
 
     <div class="completed tasks">
-
-         <!-- {{comptodos}} -->
-
+        <h4>Completed Task</h4>
+      <ul>
+         {{#comptodos}}
+          <li>  {{.}}  </li>
+         {{/comptodos}}
+      </ul>
     </div>
 
 
